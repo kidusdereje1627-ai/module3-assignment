@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f1e5;
+  color: #33251f;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: linear-gradient(135deg, #4b1f0e, #8b4513);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coffee-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.header p:last-child {
+  font-size: 20px;
+  color: #f8dfb0;
+}
+
+/* Welcome section */
+
+.welcome {
+  max-width: 900px;
+  margin: 35px auto 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #8b4513;
+  font-weight: bold;
+}
+
+.tax-example {
+  color: #777;
+  font-size: 14px !important;
+}
+
+/* Menu */
+
+.menu {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.menu-title h2 {
+  color: #4b1f0e;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.menu-title p {
+  color: #777;
+  font-size: 17px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Menu cards */
+
+.menu-card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  border-left: 6px solid #8b4513;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-card h3 {
+  font-size: 24px;
+  color: #4b1f0e;
+}
+
+.category {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Description */
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  min-height: 52px;
+  margin-bottom: 15px;
+}
+
+/* Price */
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+/* Drink styling */
+
+.menu-card.drink {
+  border-left-color: #6f4e37;
+  background: #fffaf4;
+}
+
+.menu-card.drink .category {
+  background: #ead7c0;
+  color: #6f4e37;
+}
+
+/* Breakfast styling */
+
+.menu-card.breakfast {
+  border-left-color: #d99a29;
+  background: #fffdf4;
+}
+
+.menu-card.breakfast .category {
+  background: #f8df9d;
+  color: #805b00;
+}
+
+/* Main styling */
+
+.menu-card.main {
+  border-left-color: #b33a3a;
+  background: #fff8f6;
+}
+
+.menu-card.main .category {
+  background: #f2c5c5;
+  color: #8a2020;
+}
+
+/* Dessert styling */
+
+.menu-card.dessert {
+  border-left-color: #a34f7a;
+  background: #fff7fc;
+}
+
+.menu-card.dessert .category {
+  background: #ecc9df;
+  color: #81345e;
+}
+
+/* Footer */
+
+.footer {
+  background: #33251f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:last-child {
+  color: #d8b58a;
+  font-size: 14px;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+  .header {
+    padding: 35px 15px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header p:last-child {
+    font-size: 16px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card-header {
+    align-items: flex-start;
+  }
+}
