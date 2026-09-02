@@ -15,18 +15,9 @@ textarea {
   font-family: inherit;
 }
 
-/* =========================
-   MAIN APP
-========================= */
-
 .app {
   min-height: 100vh;
 }
-
-/* =========================
-   WELCOME SECTION
-========================= */
-
 .welcome {
   text-align: center;
   padding: 40px 20px 20px;
@@ -48,11 +39,6 @@ textarea {
 .tax-example {
   color: #666;
 }
-
-/* =========================
-   MENU
-========================= */
-
 .menu {
   width: 90%;
   max-width: 1200px;
@@ -73,11 +59,6 @@ textarea {
 .menu-title p {
   color: #777;
 }
-
-/* =========================
-   CATEGORY BUTTONS
-========================= */
-
 .category-buttons {
   display: flex;
   justify-content: center;
@@ -107,21 +88,11 @@ textarea {
   background: #5b2c1a;
   color: white;
 }
-
-/* =========================
-   MENU GRID
-========================= */
-
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-
-/* =========================
-   MENU CARD
-========================= */
-
 .menu-card {
   background: white;
   padding: 22px;
@@ -156,11 +127,6 @@ textarea {
   border-left-color: #ad4b86;
   background: #fff7fc;
 }
-
-/* =========================
-   MENU CARD HEADER
-========================= */
-
 .menu-card-header {
   display: flex;
   justify-content: space-between;
@@ -198,22 +164,12 @@ textarea {
   background: #ecc5dc;
   color: #8b2863;
 }
-
-/* =========================
-   MENU DESCRIPTION
-========================= */
-
 .description {
   color: #666;
   line-height: 1.6;
   min-height: 50px;
   margin: 15px 0;
 }
-
-/* =========================
-   MENU CARD FOOTER
-========================= */
-
 .menu-card-footer {
   display: flex;
   justify-content: space-between;
@@ -241,11 +197,6 @@ textarea {
 .menu-card-footer button:hover {
   background: #7a3d24;
 }
-
-/* =========================
-   ORDER SECTION
-========================= */
-
 .order-section,
 .delivery-section {
   width: 90%;
@@ -262,11 +213,6 @@ textarea {
   color: #5b2c1a;
   margin-top: 0;
 }
-
-/* =========================
-   ORDER LIST
-========================= */
-
 .order-list {
   display: flex;
   flex-direction: column;
@@ -290,11 +236,6 @@ textarea {
   margin: 0;
   color: #666;
 }
-
-/* =========================
-   QUANTITY CONTROLS
-========================= */
-
 .quantity-controls {
   display: flex;
   align-items: center;
@@ -334,11 +275,6 @@ textarea {
 .order-item > button:hover {
   text-decoration: underline;
 }
-
-/* =========================
-   ORDER TOTAL
-========================= */
-
 .order-total {
   display: flex;
   justify-content: space-between;
@@ -348,11 +284,6 @@ textarea {
   border-top: 2px solid #5b2c1a;
   font-size: 20px;
 }
-
-/* =========================
-   DELIVERY FORM
-========================= */
-
 .delivery-section form {
   max-width: 600px;
   margin: 0 auto;
@@ -397,21 +328,11 @@ textarea {
 .delivery-section form > button:hover {
   background: #7a3d24;
 }
-
-/* =========================
-   ERRORS
-========================= */
-
 .error {
   margin: 5px 0;
   color: #c62828;
   font-size: 14px;
 }
-
-/* =========================
-   SUCCESS MESSAGE
-========================= */
-
 .success {
   margin-top: 15px;
   padding: 12px;
@@ -420,11 +341,6 @@ textarea {
   background: #e8f5e9;
   font-weight: bold;
 }
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
 @media (max-width: 800px) {
   .menu-grid {
     grid-template-columns: 1fr;
