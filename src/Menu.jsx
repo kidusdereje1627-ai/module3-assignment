@@ -67,7 +67,14 @@ const menu = [
   },
 ];
 
-function Menu() {
+const categories = ["All", "Drink", "Main", "Breakfast", "Dessert"];
+
+function Menu({ selectedCategory, setSelectedCategory, addToOrder }) {
+  const filteredMenu =
+    selectedCategory === "All"
+      ? menu
+      : menu.filter((item) => item.category === selectedCategory);
+
   return (
     <section className="menu">
       <div className="menu-title">
@@ -75,16 +82,22 @@ function Menu() {
         <p>Traditional Ethiopian flavors made with love.</p>
       </div>
 
+      <div className="category-buttons">
+        {categories.map((category) => (
+          <button
+            key={category}
+            type="button"
+            className={selectedCategory === category ? "active-category" : ""}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       <div className="menu-grid">
-        {menu.map((item) => (
-          <MenuItem
-            key={item.id}
-            name={item.name}
-            price={item.price}
-            description={item.description}
-            category={item.category}
-            emoji={item.emoji}
-          />
+        {filteredMenu.map((item) => (
+          <MenuItem key={item.id} item={item} addToOrder={addToOrder} />
         ))}
       </div>
     </section>

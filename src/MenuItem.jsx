@@ -1,4 +1,6 @@
-function MenuItem({ name, price, description, category, emoji }) {
+function MenuItem({ item, addToOrder }) {
+  const { name, price, description, category, emoji } = item;
+
   return (
     <article className={`menu-card ${category.toLowerCase()}`}>
       <div className="menu-card-header">
@@ -11,7 +13,13 @@ function MenuItem({ name, price, description, category, emoji }) {
 
       <p className="description">{description}</p>
 
-      <p className="price">{price} ETB</p>
+      <div className="menu-card-footer">
+        <p className="price">{price} ETB</p>
+
+        <button type="button" onClick={() => addToOrder(item)}>
+          Add to Order
+        </button>
+      </div>
     </article>
   );
 }
