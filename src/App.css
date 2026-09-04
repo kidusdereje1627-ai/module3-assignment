@@ -9,6 +9,7 @@ body {
   color: #3d2418;
 }
 
+<<<<<<< HEAD
 button,
 input,
 textarea {
@@ -39,33 +40,82 @@ textarea {
 .tax-example {
   color: #666;
 }
+=======
+/* =========================
+   MAIN MENU CONTAINER
+========================= */
+
+>>>>>>> 390a53e (addis-cafe)
 .menu {
   width: 90%;
   max-width: 1200px;
   margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* =========================
+   MENU TITLE
+========================= */
 
 .menu-title {
   text-align: center;
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .menu-title h2 {
   font-size: 32px;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   color: #5b2c1a;
 }
 
 .menu-title p {
+  margin: 0;
   color: #777;
 }
+<<<<<<< HEAD
+=======
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-container input {
+  padding: 11px 15px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.search-container input:focus {
+  border-color: #5b2c1a;
+}
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+>>>>>>> 390a53e (addis-cafe)
 .category-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 25px 0;
+  gap: 12px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .category-buttons button {
@@ -76,22 +126,20 @@ textarea {
   color: #5b2c1a;
   cursor: pointer;
   font-size: 15px;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
-.category-buttons button:hover {
-  background: #5b2c1a;
-  color: white;
-}
-
-.category-buttons button.active-category {
+.category-buttons button:hover,
+.category-buttons button.active-category,
+.category-buttons button.active {
   background: #5b2c1a;
   color: white;
 }
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  width: 100%;
 }
 .menu-card {
   background: white;
@@ -99,14 +147,20 @@ textarea {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-left: 5px solid #8b451f;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
+
+  /* IMPORTANT */
+  min-width: 0;
+  width: 100%;
 }
 
 .menu-card:hover {
   transform: translateY(-3px);
 }
 
-/* Category-specific colors */
+/* =========================
+   CARD COLORS
+========================= */
 
 .menu-card.drink {
   border-left-color: #795548;
@@ -115,8 +169,9 @@ textarea {
 
 .menu-card.main {
   border-left-color: #c62828;
-  background: #fff8f8;
+  background: #fff5f5;
 }
+<<<<<<< HEAD
 
 .menu-card.breakfast {
   border-left-color: #e09b00;
@@ -146,55 +201,84 @@ textarea {
   background: #ead7c4;
   color: #5b2c1a;
   font-size: 12px;
+=======
+/* =========================
+   LOADING
+========================= */
+
+#loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+>>>>>>> 390a53e (addis-cafe)
   font-weight: bold;
-  text-transform: uppercase;
 }
-
-.menu-card.main .category {
-  background: #f3c2c2;
-  color: #9b2020;
-}
-
-.menu-card.breakfast .category {
-  background: #f8df9b;
-  color: #795600;
-}
-
-.menu-card.dessert .category {
-  background: #ecc5dc;
-  color: #8b2863;
-}
+<<<<<<< HEAD
 .description {
   color: #666;
   line-height: 1.6;
   min-height: 50px;
   margin: 15px 0;
 }
+=======
+
+/* =========================
+   ERROR
+========================= */
+
+#error {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin: 20px 0;
+  background: #ffe5e5;
+  color: #b00020;
+  border-radius: 8px;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+  font-weight: bold;
+  color: #5b2c1a;
+  font-size: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 40px;
+  padding: 25px;
+  text-align: center;
+  background: #3d2418;
+  color: white;
+}
+/* Add to Order Button */
+>>>>>>> 390a53e (addis-cafe)
 .menu-card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
-}
-
-.price {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #8b3f00;
+  margin-top: 15px;
 }
 
 .menu-card-footer button {
-  padding: 9px 15px;
+  padding: 8px 14px;
+  background-color: #8b451f;
+  color: white;
   border: none;
   border-radius: 6px;
-  background: #5b2c1a;
-  color: white;
   cursor: pointer;
-  transition: 0.2s;
+  font-weight: bold;
+  transition: background 0.2s ease;
 }
 
 .menu-card-footer button:hover {
+<<<<<<< HEAD
   background: #7a3d24;
 }
 .order-section,
@@ -379,4 +463,7 @@ textarea {
   .category-buttons button {
     padding: 8px 12px;
   }
+=======
+  background-color: #5b2c1a;
+>>>>>>> 390a53e (addis-cafe)
 }
